@@ -2,7 +2,10 @@
 
 :root {
 	--rust: rgb(93, 33, 45);
+	--darkrust: rgb(32, 7, 10);
 	--leaf: rgb(39, 64, 42);
+	--darkleaf: rgb(2, 8, 6);
+	--concrete: whitesmoke;
 }
 * {
 	margin: 0;
@@ -21,13 +24,14 @@ ul {
 /*Header styling*/
 
 .header {
-	background-color: ghostwhite;
+	background-color: var(--concrete);
 	position: fixed;
 	top: 0;
 	width: 100vw;
 	height: 100px;
 	font-family: 'Bebas Neue', Verdana, sans-serif;
 	font-size: 24px;
+	box-shadow: 0px 2px 2px 1px lightgray;
 
 }
 .header-wrap {
@@ -83,7 +87,7 @@ ul {
 
 .home {
 	height: calc(100vh - 100px);
-	background: linear-gradient(45deg, rgb(32, 7, 10), var(--rust) 90%);
+	background: linear-gradient(45deg, var(--darkrust), var(--rust) 90%);
 }
 .hero {
 	max-width: 1400px;
@@ -98,7 +102,7 @@ ul {
 	text-align: center;
 	width: 600px;
 	font-family: Verdana, sans-serif;
-	color: whitesmoke;
+	color: var(--concrete);
 }
 .hero h1 {
 	font-size: 48px;
@@ -113,21 +117,21 @@ ul {
 
 .about {
 	height: 100vh;
-	background-color: #E9E9E9;
+	background-color: var(--concrete);
 }
 
 /*Section About Styling*/
 
 .work {
 	height: 100vh;
-	background: linear-gradient(45deg, rgb(2, 8, 6), var(--leaf));
+	background: linear-gradient(45deg, var(--darkleaf), var(--leaf));
 }
 
 /*Section About Styling*/
 
 .contact {
 	height: 100vh;
-	background-color: #E9E9E9;
+	background-color: var(--concrete);
 }
 
 /*Footer Styling*/
