@@ -12,7 +12,7 @@
 </head>
 <body>
 	<header class="header" id="header">
-		<div class="header-wrap">
+		<div class="header-wrap wrapper">
 			<div class="logo-wrap">
 				<img src="me_2.jpg" alt="autor-image" id="logo-img" class="logo-img">
 				<span class="logo-text" id="logo-text">Dmytro Cherednichenko</span>
@@ -28,19 +28,17 @@
 		</div>
 	</header>
 	<main>
-		<section class="info-block home" id="home">
-			<div class="hero" id="hero">
+		<section class="welcome-section" id="welcome-section">
+			<div class="welcome-wrap wrapper">
 				<h1>Hey, I am Dmytro</h1>
-				<h2>A Frontend Web Developer</h2>
-			</div>
-			<div class="hero-button-wrap">
-				<a href="#project" class="hero-button">See My Projects</a>
+				<p>A Frontend Web Developer</p>
+				<a href="#project" class="hero-button button">See My Projects</a>
 			</div>
 		</section>
-		<section class="info-block about" id="about">
-			<div class="about-wrap">
+		<section class="about" id="about">
+			<div class="about-wrap wrapper">
 				<div class="about-info about-left">
-					<h3>About me</h3>
+					<h2>About me</h2>
 					<figure class="my-image">
 						<img src="me.png" alt="">
 					</figure>
@@ -53,7 +51,7 @@
 					</figcaption>
 				</div>
 				<div class="skills about-right">
-					<h3>My skills</h3>
+					<h2>My skills</h2>
 					<div class="skills-wrap">
 						<div class="skill">HTML</div>
 						<div class="skill">CSS</div>
@@ -71,52 +69,34 @@
 				</div>
 			</div>
 		</section>
-		<section class="info-block work" id="work">
-			<div class="work-wrap">
-				<h3>
-					Projects
-				</h3>
-				<p>
-					Here you will find some of the personal and clients projects that I created
-				</p>
-				<div class="projects-wrap">
-					<a href="" class="project-link">
-						<div class="project project-1">
-							<div class="project-footer">
-								<h5 class="project-title"><span>< </span>JustSchool Survey Form<span> /></span></h5>
-							</div>
-						</div>
+		<section class="work" id="work">
+			<div class="work-wrap wrapper">
+				<h2>Projects</h2>
+				<p class="subheader">Here you will find some of the personal and clients projects that I created</p>
+				<div class="projects-grid">
+					<a href="#" target="_blank" class="project project-link">
+						<img src="projects/survey.png" alt="project" class="project-image">
+						<p class="project-title"><span>< </span>JustSchool Survey<span> /></span></p>
 					</a>
-					<a href="" class="project-link">
-						<div class="project project-2">
-							<div class="project-footer">
-								<h5 class="project-title"><span>< </span>FreeCodeCamp Magazine<span> /></span></h5>
-							</div>
-						</div>
+					<a href="#" target="_blank" class="project project-link">
+						<img src="projects/magazine.png" alt="project" class="project-image">
+						<p class="project-title"><span>< </span>freeCodeCamp Magazine<span> /></span></p>
 					</a>
-					<a href="" class="project-link">
-						<div class="project project-3">
-							<div class="project-footer">
-								<h5 class="project-title"><span>< </span>JS Documentation Page<span> /></span></h5>
-							</div>
-						</div>
+					<a href="#" target="_blank" class="project project-link">
+						<img src="projects/documetation.png" alt="project" class="project-image">
+						<p class="project-title"><span>< </span>JavaScript Documentation<span> /></span></p>
 					</a>
-					<a href="" class="project-link">
-						<div class="project project-4">
-							<div class="project-footer">
-								<h5 class="project-title"><span>< </span>Penguin Animation<span> /></span></h5>
-							</div>
-						</div>
+					<a href="#" target="_blank" class="project project-link">
+						<img src="projects/penguin.png" alt="project" class="project-image">
+						<p class="project-title"><span>< </span>Penguin Animation<span> /></span></p>
 					</a>
 				</div>
-				<div class="see-more-wrap">
-					<a href="#" class="see-more-button">See more of my works</a>
-				</div>
+				<a href="#" class="see-more-button button">See more of my works</a>
 			</div>
 		</section>
-		<section class="info-block contact" id="contact">
-			<div class="contact-wrap">
-				<h3>Let's work together!</h3>
+		<section class="contact" id="contact">
+			<div class="contact-wrap wrapper">
+				<h2>Let's work together!</h2>
 				<p>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
 				<div class="social-media-wrap">
 					<div class="social-media">
