@@ -1,11 +1,11 @@
 /*General styling*/
 
 :root {
-	--rust: rgb(93, 33, 45);
-	--darkrust: rgb(32, 7, 10);
-	--leaf: rgb(39, 64, 42);
-	--darkleaf: rgb(2, 8, 6);
-	--concrete: #f5f5f5;
+	--rust: #FD8D14;
+	--darkrust: #C51605;
+	--leaf: #FFC95F;
+	--darkleaf: #CECE5A;
+	--concrete: white;
 }
 * {
 	margin: 0;
@@ -16,7 +16,7 @@ body {
 	font-family: Lato, Verdana, sans-serif;
 	position: relative;
 	top: 100px;
-	background-color: var(--concrete);
+	background: linear-gradient(45deg, var(--darkrust), var(--rust), var(--leaf), var(--darkleaf));
 }
 ul {
 	list-style: none;
@@ -35,7 +35,7 @@ a {
 	height: 100px;
 	font-family: 'Bebas Neue', Verdana, sans-serif;
 	font-size: 24px;
-	box-shadow: 0px 2px 2px 1px lightgray;
+/*	box-shadow: 0px 2px 2px 1px lightgray;*/
 	z-index: 1;
 }
 .header-wrap {
@@ -45,6 +45,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	margin: 0 auto;
 }
 .logo-img {
 	width: 50px;
@@ -54,6 +55,10 @@ a {
 	margin-left: 15px;
 	cursor: default;
 }
+.logo-text:hover {
+	color: var(--darkleaf);
+	transition: 0.3s;
+}
 .logo-wrap {
 	display: flex;
 	align-items: center;
@@ -61,6 +66,24 @@ a {
 	height: 100%;
 	width: 400px;
 }
+@media (max-width: 650px) {
+	.logo-wrap {
+		  border: 0 !important;
+		  clip: rect(1px, 1px, 1px, 1px) !important;
+		  clip-path: inset(50%) !important;
+		  height: 1px !important;
+		  width: 1px !important;
+		  position: absolute !important;
+		  overflow: hidden !important;
+		  white-space: nowrap !important;
+		  padding: 0 !important;
+		  margin: -1px !important;
+	}
+	.header-wrap {
+		justify-content: center;
+	}
+}
+
 .nav-link {
 	display: block;
 	height: 100px;
@@ -69,7 +92,7 @@ a {
 	line-height: 100px;
 }
 .nav-link:hover {
-	color: var(--rust);
+	color: var(--darkrust);
 	transition: 0.3s;
 }
 .navbar ul {
@@ -88,8 +111,7 @@ a {
 /*Section Home Styling*/
 
 .home {
-	height: calc(100vh - 100px);
-	background: linear-gradient(45deg, var(--darkrust), var(--rust) 90%);
+	height: 600px;
 }
 .hero {
 	max-width: 1400px;
@@ -101,6 +123,7 @@ a {
 	align-items: center;
 	position: relative;
 	top: 100px;
+	margin: 0 auto;
 
 }
 .hero h1, .hero h2 {
@@ -125,7 +148,7 @@ a {
 	height: 50px;
 	border-radius: 10px;
 	background-color: var(--concrete);
-	color: black;
+	color: var(--rust);	
 	font-family: 'Bebas Neue', Verdana, sans-serif;
 	text-decoration: none;
 	line-height: 50px;
@@ -144,8 +167,8 @@ a {
 /*Section About Styling*/
 
 .about {
-	background-color: #f1f1f1;
-	height: 100vh;
+	height: 600px;
+	background-color: var(--concrete);
 }
 .about-wrap {
 	max-width: 1400px;
@@ -155,13 +178,26 @@ a {
 	align-items: center;
 	padding: 10px;
 	gap: 10px;
+	margin: 0 auto;
+}
+@media (max-width: 650px) {
+	.about-wrap {
+		flex-direction: column;
+	}
+	.about-right, .about-left {
+		width: unset;
+	}
+	.about {
+		height: unset;
+	}
 }
 .about-left, .about-right {
-	height: 95vh;
+	height: 580px;
 	width: 47.5%;
 	background-color: var(--concrete) ;
-	box-shadow: 2px 2px 2px 1px lightgray;
+	box-shadow: 0 0 15px -2px lightgray;
 	border-radius: 10px;
+/*	background: linear-gradient(135deg, var(--darkrust), var(--rust), var(--leaf), var(--darkleaf));*/
 }
 .about-left h3, .about-right h3 {
 	font-size: 30px;
@@ -190,6 +226,10 @@ a {
 	font-weight: bold;
 	color: var(--rust);
 }
+.text-link:hover {
+	color: var(--darkrust);
+	transition: 0.3s;
+}
 .skills-wrap {
 	width: 90%;
 	margin: 0 auto;
@@ -199,20 +239,20 @@ a {
 	gap: 10px;
 }
 .skill {
-	background-color: #E1E1E1;
+	background-color: lightgray;
 	padding: 10px 20px;
 	border-radius: 10px;
 	cursor: default;
 }
+.skill:hover {
+	background: linear-gradient(45deg, var(--rust), var(--darkleaf));
+	color: var(--concrete);
+}
 
 /*Section Work Styling*/
 
-.work {
-	background: linear-gradient(45deg, var(--darkleaf), var(--leaf));
-	height: 170vh;
-}
 .work-wrap {
-	height: 170vh;
+	height: 950px;
 	max-width: 1400px;
 	width: 100%;
 	padding-top: 20px;
@@ -220,6 +260,7 @@ a {
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
+	margin: 0 auto;
 }
 .work-wrap h3 {
 	color: var(--concrete);
@@ -228,7 +269,7 @@ a {
 	text-align: center;
 	margin: 0 auto 20px;
 }
-.work-wrap h4 {
+.work-wrap p {
 	max-width: 1200px;
 	width: 80%;
 	color: var(--concrete);
@@ -248,6 +289,15 @@ a {
 	justify-content: center;
 	padding: 30px;
 	margin: 0 auto;
+}
+@media (max-width: 650px) {
+	.projects-wrap{
+		display: flex;
+		flex-direction: column;
+	}
+	.work-wrap {
+		height: unset;
+	}
 }
 .project {
 	background-color: var(--concrete);
@@ -295,7 +345,7 @@ a {
 /*Section Contact Styling*/
 
 .contact {
-	height: calc(100vh - 200px);
+	height: 400px;
 	background-color: var(--concrete);
 }
 .contact-wrap {
@@ -332,6 +382,8 @@ a {
 	display: flex;
 	font-size: 24px;
 }
+
+}
 .fa-brands, .fa-solid {
 	position: relative;
 	top: 2px;
@@ -346,10 +398,9 @@ a {
 /*Footer Styling*/
 
 .footer {
-	width: calc(100vw - 10%);
+	width: 100vw;
 	height: 100px;
 	font-size: 16px;
-	border-top: 2px solid;
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
