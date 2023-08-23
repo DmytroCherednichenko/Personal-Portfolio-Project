@@ -292,6 +292,12 @@ img {
 	}
 }
 
+@media (max-height: 700px) {
+	.about-wrap {
+		height: 110vh;
+	}
+}
+
 /*Projects Section Styling*/
 
 .work-wrap {
@@ -356,6 +362,20 @@ img {
 
 }
 
+@media (max-height: 700px) {
+	.work-wrap {
+		height: 120vh;
+	}
+}
+
+@media (max-width: 400px) {
+	.work-wrap {
+		height: 200vh;
+	}
+	.about-wrap {
+		height: 200vh;
+	}
+}
 /*Section Contact Styling*/
 
 .contact {
