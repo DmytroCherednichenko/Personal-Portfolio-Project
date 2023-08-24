@@ -22,24 +22,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-@media (max-width: 1200px) {
-  html {
-    font-size: 60%;
-  }
-}
-
-@media (max-width: 980px) {
-  html {
-    font-size: 60%;
-  }
-}
-
-@media (max-width: 460px) {
-  html {
-    font-size: 60%;
-  }
-}
-
 /*General styling*/
 body {
 	font-family: Lato, Verdana, sans-serif;
