@@ -6,22 +6,20 @@
 	<link rel="stylesheet" href="styles.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/35fa5c12e5.js" crossorigin="anonymous"></script>
 	<title>Dmytro Cherednichenko</title>
 </head>
 <body>
 	<header class="header" id="header">
-		<div class="header-wrap wrapper">
+		<div id="header-wrap">
 			<div class="logo-wrap">
-				<img src="https://raw.githubusercontent.com/DmytroCherednichenko/Personal-Portfolio-Project/main/me_2.jpg" alt="autor-image" id="logo-img" class="logo-img">
 				<span class="logo-text" id="logo-text">Dmytro Cherednichenko</span>
 			</div>
 			<nav class="navbar" id="navbar">
 				<ul>
 					<li><a href="#welcome-section" class="nav-link">Home</a></li>
-					<li><a href="#about" class="nav-link">About</a></li>
-					<li><a href="#work" class="nav-link">Work</a></li>
+					<li><a href="#projects" class="nav-link">Projects</a></li>
 					<li><a href="#contact" class="nav-link">Contact</a></li>
 				</ul>
 			</nav>
@@ -30,90 +28,73 @@
 	<main>
 		<section class="welcome-section" id="welcome-section">
 			<div class="welcome-wrap wrapper">
-				<h1>Hey, I am Dmytro</h1>
-				<p>A Frontend Web Developer</p>
-				<a href="#project" class="hero-button button">See My Projects</a>
+				<h1>Hey, my name is Dmytro <span id="pronounce">[dmeˈtrɔ]</span></h1>
+				<p id="subheader">I'm a Frontend Web Developer</p>
+				<div id="img-wrap">
+					<img src="myself.png" alt="" id="my-image">
+				</div>
+				<div class="sphere sphere_top"></div>
+				<div class="sphere sphere_bottom"></div>
+				<p id="about">
+					I'm a <span>Frontend Web Developer</span> and I enjoy building the Front-end of Websites and Web Applications that make difference. Check out some of my work in the <span>Projects</span> section.
+					<br>
+					I'm open to <span>Job</span> opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <span>contact</span> me. 
+				</p>
 			</div>
 		</section>
-		<section class="about" id="about">
-			<div class="about-wrap wrapper">
-				<div class="about-info about-left">
-					<h2>About me</h2>
-					<figure class="my-image">
-						<img src="https://raw.githubusercontent.com/DmytroCherednichenko/Personal-Portfolio-Project/main/me.png" alt="">
-					</figure>
-					<figcaption>
-						I'm a <span>Frontend Web Developer</span> building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the <span>Projects</span> section.
-						<br>
-						I also like sharing content related to the stuff that I have learned over the years in <span>Web Development</span> so it can help other people of the Dev Community. Feel free to Connect or Follow me on my <a class="text-link" href="#">Linkedin</a> where I post useful content related to Web Development and Programming
-						<br>
-						I'm open to <span>Job</span> opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <span>contact</span> me. 
-					</figcaption>
-				</div>
-				<div class="skills about-right">
-					<h2>My skills</h2>
-					<div class="skills-wrap">
-						<div class="skill">HTML</div>
-						<div class="skill">CSS</div>
-						<div class="skill">JavaScript</div>
-						<div class="skill">React</div>
-						<div class="skill">SASS</div>
-						<div class="skill">GIT</div>
-						<div class="skill">GitHub</div>
-						<div class="skill">Responsive Design</div>
-						<div class="skill">SEO</div>
-						<div class="skill">Terminal</div>
-						<div class="skill">Express Basics</div>
-						<div class="skill">SQL Basics</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="work" id="projects">
-			<div class="work-wrap wrapper">
+		<section class="projects-section" id="projects-section">
+			<div class="projects-wrap wrapper">
 				<h2>Projects</h2>
-				<p class="subheader">Here you will find some of the personal and clients projects that I created</p>
+				<p>Here you will find some of the personal projects that I created</p>
 				<div class="projects-grid">
-					<a href="#" target="_blank" class="project project-link project-tile">
+					<a href="https://github.com/DmytroCherednichenko/Survey-Project-freeCodeCamp" target="_blank" class="project project-link project-tile">
 						<img src="https://raw.githubusercontent.com/DmytroCherednichenko/Personal-Portfolio-Project/main/projects/survey.png" alt="project" class="project-image">
 						<p class="project-title"><span>< </span>JustSchool Survey<span> /></span></p>
 					</a>
-					<a href="#" target="_blank" class="project project-link">
+					<a href="https://github.com/DmytroCherednichenko/freeCodeCamp-Magazine" target="_blank" class="project project-link">
 						<img src="https://raw.githubusercontent.com/DmytroCherednichenko/Personal-Portfolio-Project/main/projects/magazine.png" alt="project" class="project-image">
 						<p class="project-title"><span>< </span>freeCodeCamp Magazine<span> /></span></p>
 					</a>
-					<a href="#" target="_blank" class="project project-link">
+					<a href="https://github.com/DmytroCherednichenko/Technical-Documentation-Project-freeCodeCamp" target="_blank" class="project project-link">
 						<img src="https://raw.githubusercontent.com/DmytroCherednichenko/Personal-Portfolio-Project/main/projects/documetation.png" alt="project" class="project-image">
-						<p class="project-title"><span>< </span>JavaScript Documentation<span> /></span></p>
+						<p class="project-title"><span>< </span>Code Documentation<span> /></span></p>
 					</a>
-					<a href="#" target="_blank" class="project project-link">
-						<img src="https://raw.githubusercontent.com/DmytroCherednichenko/Personal-Portfolio-Project/main/projects/penguin.png" alt="project" class="project-image">
-						<p class="project-title"><span>< </span>Penguin Animation<span> /></span></p>
+					<a href="https://github.com/DmytroCherednichenko/Landing-Project-freeCodeCamp" target="_blank" class="project project-link">
+						<img src="pr_3.png" alt="project" class="project-image">
+						<p class="project-title"><span>< </span>Product Landing<span> /></span></p>
+					</a>
+					<a href="https://github.com/DmytroCherednichenko/Tribute-Page-Project-freeCodeCamp" target="_blank" class="project project-link">
+						<img src="pr_2.png" alt="project" class="project-image">
+						<p class="project-title"><span>< </span>Tribute Page<span> /></span></p>
+					</a>
+					<a href="https://github.com/DmytroCherednichenko/Personal-Portfolio-Project" target="_blank" class="project project-link">
+						<img src="pr_1.png" alt="project" class="project-image">
+						<p class="project-title"><span>< </span>Personal Portfolio<span> /></span></p>
 					</a>
 				</div>
-				<a href="#" class="see-more-button button">See more of my works</a>
+				<a href="https://github.com/DmytroCherednichenko" class="see-more-button button" target="_blank">See more of my works</a>
 			</div>
 		</section>
-		<section class="contact" id="contact">
+		<section class="contact-section" id="contact-section">
 			<div class="contact-wrap wrapper">
 				<h2>Let's work together!</h2>
-				<p>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
+				<p>Feel free to Contact on any social media below and I will get back to you as soon as possible</p>
 				<div class="social-media-wrap">
 					<div class="social-media">
 						<i class="fa-brands fa-facebook"></i>
-						<a href="#" id="profile-link" target="_blank">Facebook</a>
+						<a href="https://www.facebook.com/profile.php?id=100008336528005&locale=uk_UA" id="profile-link" target="_blank">Facebook</a>
 					</div>
 					<div class="social-media">
 						<i class="fa-brands fa-github"></i>
-						<a href="#" id="profile-link" target="_blank">GitHub</a>
+						<a href="https://github.com/DmytroCherednichenko" id="profile-link" target="_blank">GitHub</a>
 					</div>
 					<div class="social-media">
 						<i class="fa-brands fa-x-twitter"></i>
-						<a href="#"  id="profile-link" target="_blank">Twitter</a>
+						<a href="https://twitter.com/Strayteacher"  id="profile-link" target="_blank">Twitter</a>
 					</div>
 					<div class="social-media">
 						<i class="fa-solid fa-at"></i>
-						<a href="#" id="profile-link" target="_blank">E-mail</a>
+						<a href="creator1517@gmail.com" id="profile-link" target="_blank">E-mail</a>
 					</div>
 					<div class="social-media">
 						<i class="fa-solid fa-mobile-screen-button"></i>
@@ -122,9 +103,9 @@
 				</div>
 			</div>
 		</section>
-		<footer class="footer">
-			<p class="copyright">© Copyright 2023. Made by Dmytro Cherednichenko</p>
-		</footer>
 	</main>
+	<footer class="footer">
+		<p class="copyright">© Copyright 2023. Made by Dmytro Cherednichenko for <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></p>
+	</footer>
 </body>
 </html>
