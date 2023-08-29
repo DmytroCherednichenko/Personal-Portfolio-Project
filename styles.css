@@ -312,7 +312,7 @@ h1:hover #pronounce {
 
 /*Projects section styling*/
 
-.projects-section {
+.projects {
 	height: 100vh;
 }
 
@@ -374,7 +374,7 @@ h1:hover #pronounce {
 
 /*Section Contact Styling*/
 
-#contact-section {
+#contact {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
