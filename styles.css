@@ -238,9 +238,18 @@ h1:hover #pronounce {
 }
 
 @media (max-width: 1200px) {
+	.welcome-section {
+		height: 820px;
+		align-items: flex-start;
+	}
+
 	.welcome-wrap {
-		grid-template-columns: 1fr;
-		grid-template-rows: 40rem 4rem 3rem 15rem;
+		display: flex;
+		flex-direction: column;
+		position: static;
+		top: 0;
+		justify-content: flex-start;
+		margin-top: 5rem;
 	}
 
 	h1 {
@@ -282,31 +291,6 @@ h1:hover #pronounce {
 @media (max-width: 900px) {
 	#my-image {
 		width: 50vw;
-	}
-}
-
-@media (max-width: 600px) {
-	.welcome-wrap {
-		display: flex;
-		flex-direction: column;
-		position: static;
-		top: 0;
-		justify-content: flex-start;
-		margin-top: 5rem;
-	}
-	.welcome-section {
-		height: 800px;
-		align-items: flex-start;
-	}
-}
-
-@media (max-height: 700px) {
-	.welcome-section {
-		height: 800px;
-	}
-
-	.welcome-wrap {
-		position: static;
 	}
 }
 
